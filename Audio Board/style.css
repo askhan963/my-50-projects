@@ -1,0 +1,34 @@
+*{
+    margin: none;
+    
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.btn{
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.568);
+
+}
+.btn:focus{
+    outline: none;
+}

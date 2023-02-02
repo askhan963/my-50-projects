@@ -1,0 +1,61 @@
+*{
+    margin: none;
+    
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+  background-color: red;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    width: 90vw;
+}
+
+.i-1{
+    background-image: url('/Expanding Cards/img/1.png');
+}
+.i-1{
+    background-image: url('/Expanding Cards/img/1.png');
+}.i-2{
+    background-image: url('/Expanding Cards/img/3.png');
+}.i-3{
+    background-image: url('/Expanding Cards/img/3.png');
+}.i-4{
+    background-image: url('/Expanding Cards/img/4.png');
+}
+.i-5{
+    background-image: url('/Expanding Cards/img/5.png');
+}
+.panel{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0.5;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    transition: flex 0.5s ease;
+}
+.panel h3{
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.3s ;
+}

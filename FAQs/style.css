@@ -1,0 +1,67 @@
+*{
+    margin: none;
+    
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+   background-color: lightgray;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1{
+    margin: 20px auto;
+    text-align: center;
+    color: rebeccapurple;
+}
+.faq{
+    border: 1px solid rgba(0, 0, 0, 0.571);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 40px;
+    background-color: transparent;
+    position: relative;
+}
+.faq.active{
+    background-color: white;
+}
+.faq-title{
+    margin: 0 10px;
+}
+.faq-text{
+    margin: 10px 0 0 20px;
+    display: none;
+}
+.faq.active .faq-text{
+    display: block;
+}
+
+.faq-btn{
+    background-color: transparent;
+    position: absolute;
+    width: 50px;
+   
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    top: 30px;
+    right: 30px;
+  
+    cursor: pointer;
+    transition:  1s ease;
+}
+.faq .faq-btn .fa-times{
+    display: none;
+    }
+.faq.active .faq-btn .fa-chevron-down{
+display: none;
+}
+.faq.active .faq-btn .fa-times{
+    display: block;
+    background-color: gray;
+    color: white;
+ }
+
+

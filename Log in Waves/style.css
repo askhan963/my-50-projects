@@ -1,0 +1,80 @@
+*{
+    margin: none;
+    
+    font-family: 'Muli', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container{
+    background-color: steelblue;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.control.label{
+    position: relative;
+    margin: 20px 0 12px;
+}
+.btn{
+    width: 100%;
+    margin-top: 20x;
+    background-color: lightblue;
+    border: 0;
+    color: steelblue;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.control.label input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+}
+.control.label input:focus{
+    outline: none;
+    border-bottom-color: lightblue;
+
+}
+.control.label label{
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 0;
+}
+.container a{
+    text-decoration: none;
+    color: lightblue;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.control.label label span{
+    display: inline-block;
+    font-size: 1rem;
+    min-height: 5px;
+    transition:  0.3s ease-in;
+}
+.control.label input:focus + label span,
+.control.label input:valid + label span{
+    color: lightblue;
+    transform: translateY(-30px);
+}

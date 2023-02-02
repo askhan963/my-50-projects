@@ -1,0 +1,100 @@
+*{
+    margin: none;
+    list-style: none;    
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.contant{
+    max-width: 1000px;
+    margin: 20px auto;
+    min-height: 100vh;
+
+}
+.contant img{
+    width: 400px;
+}
+.container{
+    margin: 20px 0;
+    transform-origin: top left;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    transition: transform 0.5s linear;
+}
+.container.show{
+    transform: rotate(-20deg);
+}
+.circle-cont{
+    position: fixed;
+    left: -100px;
+    top: -100px;
+   
+}
+.circle{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+.container.show .circle{
+    transform: rotate(-70deg);
+}
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 100px;
+    cursor: pointer;
+}
+.circle button:focus{
+    outline: none;
+}
+.circle button#open{
+    left: 60%;
+}
+.circle button#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+.container.show + nav li{
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+nav{
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    z-index: 100;
+}
+nav ul li{
+margin: 40px 0;
+font-size: 16px;
+transform: translateX(-100%);
+transition: transform 0.4s ease-in;
+}
+nav ul li + li{
+    margin-left: 15px;
+transform: translateX(-150%);
+
+}
+nav ul li + li + li{
+margin-left: 30px;
+transform: translateX(-200%);
+
+}
+nav ul li i{
+    font-size: 20px;
+    margin-right: 10px;
+}

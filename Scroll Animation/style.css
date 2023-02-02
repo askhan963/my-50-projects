@@ -1,0 +1,35 @@
+*{
+    
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+h1{
+    margin: 20px; 
+}
+.box{
+   background-color: aquamarine;
+   height: 200px;
+   width: 400px;
+   border-radius: 10px;
+ margin: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transform: translateX(100%);
+ transition: transform 0.4s ease;
+}
+.box:nth-last-of-type(even){
+ transform: translateX(-400%);
+}
+.box.show{
+ transform: translateX(0);
+}
